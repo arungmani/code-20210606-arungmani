@@ -5,3 +5,5 @@ simple node project
 use "npm run dev" command without quotes
 
 update the data in personData.json file for testing
+
+api endpoint: http://localhost:3000/api/bmiresult
