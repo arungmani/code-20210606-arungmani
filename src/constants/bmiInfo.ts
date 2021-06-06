@@ -1,5 +1,5 @@
 
-export const BMICATEGORY = {
+export const BMI_CATEGORY = {
     UNDER_WEIGHT:18.4,
     NORMAL_WEIGHT:24.9,
     OVER_WEIGHT:29.9,
@@ -8,7 +8,7 @@ export const BMICATEGORY = {
     VERY_SEVERELY_OBESE:40
 }
 
-export const HEALTH_DATA = {
+export const HEALTH_DATA = {  
     UNDER_WEIGHT:{bmi:'',bmiCategory:"Under Weight",healthRisk:"Malnutrition Risk"},
     NORMAL_WEIGHT:{bmi:'',bmiCategory:"Normal Weight",healthRisk:"Low Risk"},
     OVER_WEIGHT:{bmi:'',bmiCategory:"Over Weight",healthRisk:"Enhanced Risk"},

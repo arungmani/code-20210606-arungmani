@@ -2,7 +2,7 @@ import express, { Request, Response } from "express";
 import * as personalData from "./persons.service";
 export const personsRouter = express.Router();
 const fs = require('fs');
-const rawdata = fs.readFileSync('../bmi-calculator/src/constants/personData.json');
+const rawdata = fs.readFileSync('../code-20210606-arungmani/src/constants/personData.json');
 const data = JSON.parse(rawdata);
 personsRouter.get("/", async (req: Request, res: Response) => {
     try {
