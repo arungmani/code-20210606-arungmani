@@ -14,5 +14,6 @@ export const HEALTH_DATA = {
     OVER_WEIGHT:{bmi:'',bmiCategory:"Over Weight",healthRisk:"Enhanced Risk"},
     MODERATELY_OBESE:{bmi:'',bmiCategory:"Moderately Obese",healthRisk:"Medium Risk"},
     SEVERELY_OBESE:{bmi:'',bmiCategory:"Severely Obese",healthRisk:"High Risk"},
-    VERY_SEVERELY_OBESE:{bmi:'',bmiCategory:"very Severely Obese",healthRisk:"Very High Risk"}
+    VERY_SEVERELY_OBESE:{bmi:'',bmiCategory:"very Severely Obese",healthRisk:"Very High Risk"},
+    INVALID_DATA:{error:'invalid data'}
 }

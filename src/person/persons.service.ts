@@ -1,6 +1,7 @@
 import { BMI_CATEGORY, HEALTH_DATA } from "../constants/bmiInfo";
 
 export const getBMIResult = (personData: any) => {
+  try{
   let res = personData.WeightKg / (personData.HeightCm / 100); 
 
   if (res <= BMI_CATEGORY.UNDER_WEIGHT) 
@@ -33,9 +34,15 @@ export const getBMIResult = (personData: any) => {
     return { ...HEALTH_DATA.SEVERELY_OBESE, ...personData };
    } 
   
-  else 
+  else if (res >=  BMI_CATEGORY.VERY_SEVERELY_OBESE )
    {
     HEALTH_DATA.VERY_SEVERELY_OBESE.bmi = parseFloat(res.toString()).toFixed(2); 
     return { ...HEALTH_DATA.VERY_SEVERELY_OBESE, ...personData };
    }
+   else {
+    return {...HEALTH_DATA.INVALID_DATA,...personData}
+   }
+  } catch(e){
+    return {...HEALTH_DATA.INVALID_DATA,...personData}
+  }
 };
